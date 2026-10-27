@@ -38,27 +38,55 @@
       border: 1px solid #555;
       border-radius: 10px;
       padding: 25px 12px;
+      height: 100%;
+      box-sizing: border-box;
+    }
+    .roster a {
+      color: white;
+      text-decoration: none;
+    }
+    .wrestler img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 5px;
+    }
+    .wrestler h3 {
+      color: #ffd15c;
+    }
+    .wrestler p {
+      color: white;
     }
     .wrestler a {
       color: #ffd15c;
       text-decoration: none;
     }
-    .photo {
-      font-size: 60px;
-      margin-bottom: 15px;
-    }
     footer {
       padding: 25px;
       color: #aaa;
     }
+    @media (max-width: 700px) {
+      .roster {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 400px) {
+      .roster {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="WAP%20Logo%202026.png" alt="W.A.P. Wrestling and Pinfalls Logo" style="width:100%; max-width:550px; height:auto; display:block; margin:-100px auto -100px;">
-    <p class="subtitle">WRESTLING AND PINFALLS</p>
-    <p>THE OFFICIAL HOME OF W.A.P. WRESTLING</p>
-  </header>
+
+<header>
+  <img src="WAP%20Logo%202026.png"
+       alt="W.A.P. Wrestling and Pinfalls Logo"
+       style="width:100%; max-width:550px; height:auto; display:block; margin:-100px auto -100px;">
+  <p class="subtitle">WRESTLING AND PINFALLS</p>
+  <p>THE OFFICIAL HOME OF W.A.P. WRESTLING</p>
+</header>
+
 <nav style="background:#1b1b1b; padding:18px; border-bottom:3px solid #a00000;">
   <a href="index.html" style="color:white; margin:12px; text-decoration:none; font-weight:bold;">HOME</a>
   <a href="#roster" style="color:white; margin:12px; text-decoration:none; font-weight:bold;">ROSTER</a>
@@ -67,239 +95,343 @@
   <a href="#" style="color:white; margin:12px; text-decoration:none; font-weight:bold;">HISTORY</a>
   <a href="#" style="color:white; margin:12px; text-decoration:none; font-weight:bold;">SHOP</a>
 </nav>
-  <main>
-    <h2>MEET THE SUPERSTARS</h2>
-    <p>Click a wrestler to view their profile. Coming soon!</p>
-    <div class="roster" id="roster">
 
-      <a href="a2ckilla.html" style="text-decoration:none; color:white;">  
+<main>
+  <h2>MEET THE SUPERSTARS</h2>
+  <p>Click a wrestler to view their profile. More profiles coming soon!</p>
+
+  <div class="roster" id="roster">
+
+    <a href="a2ckilla.html">
       <div class="wrestler">
-        <img src="A2CKilla.png" alt="A2CKilla" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="A2CKilla.png" alt="A2CKilla">
         <h3>A2CKilla</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="alienb21.html" style="text-decoration:none; color:white;">  
+    <a href="alcina-dimitrescu.html">
       <div class="wrestler">
-        <img src="AlienB21.png" alt="AlienB21" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Alcina%20Dimitrescu.png" alt="Alcina Dimitrescu">
+        <h3>Alcina Dimitrescu</h3>
+        <p>W.A.P. Superstar</p>
+      </div>
+    </a>
+
+    <a href="alienb21.html">
+      <div class="wrestler">
+        <img src="AlienB21.png" alt="AlienB21">
         <h3>AlienB21</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="cheebra.html" style="text-decoration:none; color:white;">
+    <a href="aunt-judy.html">
       <div class="wrestler">
-        <img src="Cheebra.png" alt="Cheebra" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Aunt%20Judy.png" alt="Aunt Judy">
+        <h3>Aunt Judy</h3>
+        <p>W.A.P. Superstar</p>
+      </div>
+    </a>
+
+    <a href="cheebra.html">
+      <div class="wrestler">
+        <img src="Cheebra.png" alt="Cheebra">
         <h3>Cheebra</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="chillout4204.html" style="text-decoration:none; color:white;">
+    <a href="chillout4204.html">
       <div class="wrestler">
-        <img src="Chillout4204.png" alt="Chillout4204" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Chillout4204.png" alt="Chillout4204">
         <h3>Chillout4204</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="d3cay.html" style="text-decoration:none; color:white;">
+    <a href="d3cay.html">
       <div class="wrestler">
-        <img src="D3CAY.png" alt="D3CAY" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="D3CAY.png" alt="D3CAY">
         <h3>D3CAY</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="djmadteabagger.html" style="text-decoration:none; color:white;">
+    <a href="djmadteabagger.html">
       <div class="wrestler">
-        <img src="DJMadTeaBagger.png" alt="DJMadTeaBagger" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="DJMadTeaBagger.png" alt="DJMadTeaBagger">
         <h3>DJMadTeaBagger</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="edgar.html" style="text-decoration:none; color:white;">
+    <a href="drmariomaster.html">
       <div class="wrestler">
-        <img src="Edgar.png" alt="Edgar" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="DrMarioMaster.png" alt="DrMarioMaster">
+        <h3>DrMarioMaster</h3>
+        <p>W.A.P. Superstar</p>
+      </div>
+    </a>
+
+    <a href="edgar.html">
+      <div class="wrestler">
+        <img src="Edgar.png" alt="Edgar">
         <h3>Edgar</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="floppyjimmie.html" style="text-decoration:none; color:white;">
+    <a href="floppyjimmie.html">
       <div class="wrestler">
-        <img src="FloppyJimmie.png" alt="FloppyJimmie" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="FloppyJimmie.png" alt="FloppyJimmie">
         <h3>FloppyJimmie</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="grap3crush.html" style="text-decoration:none; color:white;">
+    <a href="grap3crush.html">
       <div class="wrestler">
-        <img src="Grap3Crush.png" alt="Grap3Crush" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Grap3Crush.png" alt="Grap3Crush">
         <h3>Grap3Crush</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="happykhicken.html" style="text-decoration:none; color:white;">
+    <a href="happykhicken.html">
       <div class="wrestler">
-        <img src="HappyKhicken.png" alt="HappyKhicken" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="HappyKhicken.png" alt="HappyKhicken">
         <h3>HappyKhicken</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="jesus.html" style="text-decoration:none; color:white;">
+    <a href="jenjunquie.html">
       <div class="wrestler">
-        <img src="Jesus.png" alt="Jesus" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Jen%20Junquie.png" alt="Jen Junquie">
+        <h3>Jen Junquie</h3>
+        <p>W.A.P. Superstar</p>
+      </div>
+    </a>
+
+    <a href="jess-the-jerk.html">
+      <div class="wrestler">
+        <img src="Jess%20The%20Jerk.png" alt="Jess The Jerk">
+        <h3>Jess The Jerk</h3>
+        <p>W.A.P. Superstar</p>
+      </div>
+    </a>
+
+    <a href="jesus.html">
+      <div class="wrestler">
+        <img src="Jesus.png" alt="Jesus">
         <h3>Jesus</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="libra.html" style="text-decoration:none; color:white;">
+    <a href="libra.html">
       <div class="wrestler">
-        <img src="Libra.png" alt="Libra" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Libra.png" alt="Libra">
         <h3>Libra</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="lucifer69.html" style="text-decoration:none; color:white;">
+    <a href="lucifer69.html">
       <div class="wrestler">
-        <img src="Lucifer69.png" alt="Lucifer69" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Lucifer69.png" alt="Lucifer69">
         <h3>Lucifer69</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="lutherblack.html" style="text-decoration:none; color:white;">
+    <a href="lutherblack.html">
       <div class="wrestler">
-        <img src="Luther Black.png" alt="Luther Black" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Luther%20Black.png" alt="Luther Black">
         <h3>Luther Black</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-    <a href="luthor.html" style="text-decoration:none; color:white;">
-  <div class="wrestler">
-    <img src="Luthor The Lunatic World Champ.png" alt="Luthor the Lunatic" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
-    <h3>Luthor the Lunatic</h3>
-    <p>W.A.P. World Champion</p>
-  </div>
-</a>
-
-      <a href="matthewbevilaqua.html" style="text-decoration:none; color:white;">
+    <a href="luthor.html">
       <div class="wrestler">
-        <img src="Matthew Bevilaqua.png" alt="Matthew Bevilaqua" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Luthor%20The%20Lunatic%20World%20Champ.png" alt="Luthor the Lunatic">
+        <h3>Luthor the Lunatic</h3>
+        <p>W.A.P. World Champion</p>
+      </div>
+    </a>
+
+    <a href="matthewbevilaqua.html">
+      <div class="wrestler">
+        <img src="Matthew%20Bevilaqua.png" alt="Matthew Bevilaqua">
         <h3>Matthew Bevilaqua</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="papapig.html" style="text-decoration:none; color:white;">
+    <div class="wrestler">
+      <img src="Mistress%20Graves.png" alt="Mistress Graves">
+      <h3>Mistress Graves</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+    <div class="wrestler">
+      <img src="Nombies.png" alt="Nombies">
+      <h3>Nombies</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+    <a href="papapig.html">
       <div class="wrestler">
-        <img src="Papa Pig.png" alt="Papa Pig" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Papa%20Pig.png" alt="Papa Pig">
         <h3>Papa Pig</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="pastordave.html" style="text-decoration:none; color:white;">
+    <a href="pastordave.html">
       <div class="wrestler">
-        <img src="Pastor Dave.png" alt="Pastor Dave" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Pastor%20Dave.png" alt="Pastor Dave">
         <h3>Pastor Dave</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="pastorleerodgers.html" style="text-decoration:none; color:white;">
+    <a href="pastorleerodgers.html">
       <div class="wrestler">
-        <img src="Pastor Lee Rodgers.png" alt="Pastor Lee Rodgers" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Pastor%20Lee%20Rodgers.png" alt="Pastor Lee Rodgers">
         <h3>Pastor Lee Rodgers</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="pastorphilmagnum.html" style="text-decoration:none; color:white;">
+    <a href="pastorphilmagnum.html">
       <div class="wrestler">
-        <img src="Pastor Phil Magnum.png" alt="Pastor Phil Magnum" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Pastor%20Phil%20Magnum.png" alt="Pastor Phil Magnum">
         <h3>Pastor Phil Magnum</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="pastortimtaylor.html" style="text-decoration:none; color:white;">
+    <a href="pastortimtaylor.html">
       <div class="wrestler">
-        <img src="Pastor Tim Taylor.png" alt="Pastor Tim Taylor" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Pastor%20Tim%20Taylor.png" alt="Pastor Tim Taylor">
         <h3>Pastor Tim Taylor</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="romedycob.html" style="text-decoration:none; color:white;">
+    <div class="wrestler">
+      <img src="Queen%20Sephorahh.png" alt="Queen Sephorahh">
+      <h3>Queen Sephorahh</h3>
+      <p>G.L.O.W. Champion</p>
+    </div>
+
+    <a href="romedycob.html">
       <div class="wrestler">
-        <img src="RomedyCob.png" alt="RomedyCob" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="RomedyCob.png" alt="RomedyCob">
         <h3>RomedyCob</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="shawn625.html" style="text-decoration:none; color:white;">
-  <div class="wrestler">
-    <img src="Shawn625%20IC%20Champ.png" alt="Shawn625" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
-    <h3>Shawn625</h3>
-    <p>Intercontinental Champion</p>
-  </div>
-</a>
+    <div class="wrestler">
+      <img src="SCAMFRAUD.png" alt="SCAMFRAUD">
+      <h3>SCAMFRAUD</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
 
-      <a href="sidlulz.html" style="text-decoration:none; color:white;">
+    <a href="shawn625.html">
       <div class="wrestler">
-        <img src="SidLULZ.png" alt="SidLULZ" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Shawn625%20IC%20Champ.png" alt="Shawn625">
+        <h3>Shawn625</h3>
+        <p>Intercontinental Champion</p>
+      </div>
+    </a>
+
+    <a href="sidlulz.html">
+      <div class="wrestler">
+        <img src="SidLULZ.png" alt="SidLULZ">
         <h3>SidLULZ</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="slogre.html" style="text-decoration:none; color:white;">
+    <a href="slogre.html">
       <div class="wrestler">
-        <img src="SLOGRE.png" alt="SLOGRE" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="SLOGRE.png" alt="SLOGRE">
         <h3>SLOGRE</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="sonunknown.html" style="text-decoration:none; color:white;">
+    <a href="sonunknown.html">
       <div class="wrestler">
-        <img src="SonUnknown.png" alt="SonUnknown" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="SonUnknown.png" alt="SonUnknown">
         <h3>SonUnknown</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="stevefantasy.html" style="text-decoration:none; color:white;">
+    <div class="wrestler">
+      <img src="SpookyLilSpirit.png" alt="SpookyLilSpirit">
+      <h3>SpookyLilSpirit</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+    <div class="wrestler">
+      <img src="SpoopyKitt.png" alt="SpoopyKitt">
+      <h3>SpoopyKitt</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+    <a href="stevefantasy.html">
       <div class="wrestler">
-        <img src="Steve Fantasy.png" alt="Steve Fantasy" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="Steve%20Fantasy.png" alt="Steve Fantasy">
         <h3>Steve (BLU GOD) Fantasy</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
 
-      <a href="synthia.html" style="text-decoration:none; color:white;">
+    <div class="wrestler">
+      <img src="StonerBra420.png" alt="StonerBra420">
+      <h3>StonerBra420</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+    <div class="wrestler">
+      <img src="Svphron.png" alt="Svphron">
+      <h3>Svphron</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+    <a href="synthia.html">
       <div class="wrestler">
-        <img src="SYNTHIA.png" alt="SYNTHIA" style="width:100%; max-width:200px; height:auto; border-radius:5px;">
+        <img src="SYNTHIA.png" alt="SYNTHIA">
         <h3>SYNTHIA</h3>
         <p>W.A.P. Superstar</p>
       </div>
     </a>
-    </div>
-  </main>
 
-  <footer>
-    W.A.P. Wrestling and Pinfalls
-  </footer>
+    <div class="wrestler">
+      <img src="TrixieHorror.png" alt="TrixieHorror">
+      <h3>TrixieHorror</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+    <div class="wrestler">
+      <img src="Yun.png" alt="Yun">
+      <h3>Yun</h3>
+      <p>W.A.P. Superstar</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  W.A.P. Wrestling and Pinfalls
+</footer>
+
 </body>
 </html>
